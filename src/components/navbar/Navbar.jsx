@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 export const Navbar = () => {
 
     const navigate = useNavigate();
+
+    const location = useLocation();
 
     const handleLogout = () => {
         navigate('/', {
@@ -12,44 +14,27 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className='nav flex-column text-center'>
-            <div>
-                <div>
-                    <NavLink
-                    className={({ isActive }) => isActive ? 'nav-link active text-white bg-primary' : 'nav-link'}
-                        to={'VerCitas'}
-                    >
-                        Ver Citas
-                    </NavLink>
+        <nav className='w-full text-center space-y-4'>
+            <NavLink to={'citas'}>
+                <div className={location.pathname === '/app/citas' ? 'py-2 px-3 text-white bg-blue-500' : 'py-2 px-3 text-white bg-blue-200'}>
+                    Ver Citas
                 </div>
-                <div>
-                    <NavLink
-                    className={({ isActive }) => isActive ? 'nav-link active text-white bg-primary' : 'nav-link'}
-                        to={'Paciente'}
-                    >
-                        Pacientes
-                    </NavLink>
+            </NavLink>
+            <NavLink to={'nuevo'}>
+                <div className={location.pathname === '/app/nuevo' ? 'py-2 px-3 text-white bg-blue-500' : 'py-2 px-3 text-white bg-blue-200'}>
+                Pacientes
                 </div>
-                <div>
-                    <NavLink
-                    className={({ isActive }) => isActive ? 'nav-link active text-white bg-primary' : 'nav-link'}
-                        to={'Agendar'}
-                    >
-                        Agendar
-                    </NavLink>
+            </NavLink>
+            <NavLink to={'/app'}>
+                <div className={location.pathname === '/app' ? 'py-2 px-3 text-white bg-blue-500' : 'py-2 px-3 text-white bg-blue-200'}>
+                    Agendar
                 </div>
-
-            </div>
-            <div>
-                <ul>
-                    <button
-                    className='mt-2 btn btn-primary'
-                        onClick={handleLogout}
-                    >
-                        Logout
-                    </button>
-                </ul>
-            </div>
+            </NavLink>
+            <button
+                className='mt-2 py-2 px-3 bg-red-500 text-white' onClick={handleLogout}
+            >
+                Logout
+            </button>
         </nav>
     )
 }

@@ -6,7 +6,7 @@ export const LoginScreen = () => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        navigate('/VerCitas', {
+        navigate('/app', {
             replace: true
         });
     }
@@ -47,6 +47,6 @@ export const LoginScreen = () => {
                     <button type="submit" className="btn btn-primary">Enviar</button>
                 </form>
             </div>
-        </div >
+        </div>
     );
 }

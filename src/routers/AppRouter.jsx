@@ -1,15 +1,24 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { Agendar } from '../components/citas/Agendar';
+import { VerCitas } from '../components/citas/VerCitas';
 import { LoginScreen } from '../components/login/LoginScreen';
+import { Paciente } from '../components/paciente/Paciente';
 
-import { DashboardRoutes } from './DashboardRoutes';
+import { NavbarLayout } from '../layouts/NavbarLayout';
 
 export const AppRouter = () =>{
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<LoginScreen />} />
-                <Route path="/*" element={<DashboardRoutes />} />
+                <Route>
+                    <Route path="/" element={<LoginScreen />} />
+                </Route>
+                <Route path="/app" element={<NavbarLayout />}>
+                    <Route index element={<Agendar />} />
+                    <Route path="citas" element={<VerCitas />} />
+                    <Route path="nuevo" element={<Paciente />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     )

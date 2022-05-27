@@ -2,8 +2,6 @@ import React from 'react';
 
 export const Paciente = () =>{
     return(
-        <div>
-            <h1>Paciente</h1>
-        </div>
+            <h1 className='py-2 font-bold text-center text-3xl'>Paciente</h1>
     )
 }

@@ -25,27 +25,29 @@ export const Agendar = () => {
     }
 
     return (
-        <div>
-            <div className='d-flex py-2 justify-content-center'><h1>Agendar Cita</h1></div>
-            <div className='d-flex flex-column align-items-center justify-content-center'>
+        <>
+            <div className='py-2 font-bold text-center text-3xl'><h1>Agendar Cita</h1></div>
+            <div className=''>
                 <div className='p-2 text-center'>
                     <form className="" onSubmit={enviarDatos}>
-                        <div className="form-group p-2">
+                        <div className="p-2">
                             <input type="text" placeholder="Paciente" className="form-control" onChange={handleInputChange} name="Paciente"></input>
                         </div>
-                        <div className="form-group p-2">
+                        <div className="p-2">
                             <input type="password" placeholder="Asunto" className="form-control" onChange={handleInputChange} name="Asunto"></input>
                         </div>
-                        <div className="form-group p-2">
+                        <div className="p-2">
                             <input type="password" placeholder="Doctor" className="form-control" onChange={handleInputChange} name="Doctor"></input>
                         </div>
                         <div className="py-4">
-                            <Calendar/>
+                            <Calendar 
+                                className='mx-auto'
+                            />
                         </div>
                         <button type="submit" className="btn btn-primary">Agendar</button>
                     </form>
                 </div>
-            </div >
-        </div>
+            </div>
+        </>
     )
 }

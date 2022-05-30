@@ -31,20 +31,20 @@ export const Agendar = () => {
                 <div className='p-2 text-center'>
                     <form className="" onSubmit={enviarDatos}>
                         <div className="p-2">
-                            <input type="text" placeholder="Paciente" className="form-control" onChange={handleInputChange} name="Paciente"></input>
+                            <input type="text" placeholder="Paciente" className="rounded border border-1  p-2" onChange={handleInputChange} name="--Paciente"></input>
                         </div>
                         <div className="p-2">
-                            <input type="password" placeholder="Asunto" className="form-control" onChange={handleInputChange} name="Asunto"></input>
+                            <input type="text" placeholder="Asunto" className="rounded border border-1 p-2" onChange={handleInputChange} name="Asunto"></input>
                         </div>
                         <div className="p-2">
-                            <input type="password" placeholder="Doctor" className="form-control" onChange={handleInputChange} name="Doctor"></input>
+                            <input type="text" placeholder="Doctor" className=" rounded border border-1 p-2" onChange={handleInputChange} name="Doctor"></input>
                         </div>
                         <div className="py-4">
                             <Calendar 
                                 className='mx-auto'
                             />
                         </div>
-                        <button type="submit" className="btn btn-primary">Agendar</button>
+                        <button type="submit" className="border border-1 border-black inline-block px-6 py-2 border-1 border-black text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Agendar</button>
                     </form>
                 </div>
             </div>

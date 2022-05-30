@@ -17,7 +17,7 @@ export const AppRouter = () =>{
                 <Route path="/app" element={<NavbarLayout />}>
                     <Route index element={<Agendar />} />
                     <Route path="citas" element={<VerCitas />} />
-                    <Route path="nuevo" element={<Paciente />} />
+                    <Route path="paciente" element={<Paciente />} />
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -54,8 +54,8 @@ export const LoginScreen = () => {
                 <div className='flex flex-col h-full bg-white  items-center'>
                     <div className="flex-none w-20 h-20" />
                     <div className='grow text-center flex flex-col items-center'>
-                        <img className='object-center w-20 flex-none' src={loginImage} alt='loginImage' />
-                        <div className='py-2 font-bold text-center text-3xl flex-none'><h1>Inicio de sesión</h1></div>
+                        <img className='object-center md:w-28 sm:w-20 flex-none' src={loginImage} alt='loginImage' />
+                        <div className='pt-8 pb-4 font-bold text-center text-blue-600 uppercase text-2xl flex-none'><h1>Inicio de sesión</h1></div>
                         <Formik
                             initialValues={{
                                 email: '',

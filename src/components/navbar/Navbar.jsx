@@ -17,8 +17,8 @@ export const Navbar = () => {
 
     return (
         <div className='flex flex-col items-center'>
-            <div className= 'bg-clip-content sm:w-20 sm:h-20 md:w-32 md:h-32 flex items-center justify-center rounded-full bg-blue-900 my-2 text-center md:text-7xl sm:text-5xl font-bold uppercase text-white'>
-             {user.username[0]}
+            <div className= 'bg-clip-content sm:w-20 sm:h-20 md:w-32 md:h-32 flex items-center justify-center rounded-full bg-blue-900 my-2 text-center md:text-7xl sm:text-5xl font-bold uppercase text-white cursor-default hover:animate-spin'>
+                <p>{user.username[0]}</p>
             </div>
             {/* <img className='py-2 object-center w-20 flex-none' src={loginImage} alt='loginImage' /> */}
             <p className='py-2 font-bold text-center text-blue-700'>Bienvenid@ {user.username}</p>

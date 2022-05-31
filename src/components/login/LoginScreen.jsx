@@ -75,7 +75,7 @@ export const LoginScreen = () => {
                                     <Field type="password" placeholder="Contraseña" className="p-2" name="pass"/>
                                     {errors.pass && touched.pass ? <div className='bg-red-500 border-2 border-red-700 font-bold p-1 mt-2 text-sm uppercase text-center text-white'>{errors.pass}</div> : null}
                                 </div>
-                                <input type="submit" value='Enviar' className="border border-1 border-black inline-block px-6 py-2 border-1 border-black text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"/>
+                                <input type="submit" value='Enviar' className="border border-1 inline-block px-6 py-2 border-1 border-black text-blue-600 font-medium text-xs leading-tight uppercase rounded  hover:border-blue-900 hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-0 hover:-translate-y-2 transition duration-150 ease-in-out my-3"/>
                             </Form>);
                         }}</Formik>
                     </div>

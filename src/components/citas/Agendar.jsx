@@ -26,7 +26,7 @@ export const Agendar = () => {
 
     return (
         <>
-            <div className='py-2 font-bold text-center text-3xl'><h1>Agendar Cita</h1></div>
+            <div className='py-4 text-blue-600 font-bold text-center text-3xl uppercase'><h1>Agendar Cita</h1></div>
             <div className=''>
                 <div className='p-2 text-center'>
                     <form className="" onSubmit={enviarDatos}>

@@ -87,7 +87,7 @@ export class Paciente extends React.Component {
     render() {
         return (
             <div>
-                <h1 className='py-2 font-bold text-center text-3xl'>Paciente</h1>
+                <h1 className='py-4 text-blue-600 font-bold text-center text-3xl uppercase'>Paciente</h1>
                 <form className='py-4'>
                     <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
                     <div className="relative">

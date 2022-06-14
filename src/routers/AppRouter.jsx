@@ -3,7 +3,7 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import { Agendar } from '../components/citas/Agendar';
 import { VerCitas } from '../components/citas/VerCitas';
 import { LoginScreen } from '../components/login/LoginScreen';
-import { Paciente } from '../components/paciente/Paciente';
+import { Paciente } from '../components/Paciente/Paciente';
 
 import { NavbarLayout } from '../layouts/NavbarLayout';
 

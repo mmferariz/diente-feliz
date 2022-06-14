@@ -109,8 +109,8 @@ export class Paciente extends React.Component {
                                 <input type="text" placeholder="Edad" className="p-2" name="ed"></input>
                                 <input type="text" placeholder="Alergias" className="p-2" name="alrgs"></input>
                                 <div className='py-2 flex'>
-                                    <button type="submit" className="border border-1 border-black inline-block px-6 py-2 border-1 border-black text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Modificar</button>
-                                    <button type="submit" className=" border border-1 border-blackinline-block px-6 py-2 border-1 border-black text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Eliminar</button>
+                                    <button type="submit" className="border border-1 border-black inline-block px-6 py-2 border-1 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Modificar</button>
+                                    <button type="submit" className=" border border-1 border-black inline-block px-6 py-2 border-1 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Eliminar</button>
                                 </div>
                             </div>
                         </div>
